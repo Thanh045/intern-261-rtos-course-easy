@@ -14,29 +14,66 @@
 
 /* TODO 1: build the GPIO port/pin pair for PA<BLINK_GPIO_PIN>.
  *         Hint: GPIO_PIN_0 .. GPIO_PIN_15 are bit masks, not indices. */
+#define BLINK_PORT GPIOA
+#define BLINK_PIN  ((uint16_t)(1U << BLINK_GPIO_PIN))
 
 /* TODO 2: implement the bring-up task.
  *         - toggle the pin
  *         - block for BLINK_PERIOD_MS using vTaskDelay()
  *         - the task must never return */
+
 static void bringup_task(void *argument)
 {
     (void)argument;
 
     for (;;) {
-        /* TODO */
+        HAL_GPIO_TogglePin(BLINK_PORT, BLINK_PIN);
+        vTaskDelay(pdMS_TO_TICKS(BLINK_PERIOD_MS));
+        
     }
 }
 
 void app_main(void)
 {
-    /* TODO 3: create bringup_task with stack BRINGUP_STACK_WORDS and a priority
-     *         you can justify. Check the return value — do not ignore it. */
+    BaseType_t result = xTaskCreate(
+        bringup_task,
+        "bringup",
+        BRINGUP_STACK_WORDS,
+        NULL,
+        tskIDLE_PRIORITY + 1,
+        NULL
+    );
 
-    /* TODO 4: start the scheduler. */
+    configASSERT(result == pdPASS);
 
-    /* Reaching this point means the scheduler returned: out of heap, or the
-     * handlers in TODO 5 were never mapped. Trap here so it is visible. */
+    if (result != pdPASS) {
+        for (;;) {
+        }
+    }
+
+    vTaskStartScheduler();
+
+    for (;;) {
+    }
+}
+
+void vApplicationStackOverflowHook(
+    TaskHandle_t task,
+    char *task_name)
+{
+    (void)task;
+    (void)task_name;
+
+    taskDISABLE_INTERRUPTS();
+
+    for (;;) {
+    }
+}
+
+void vApplicationMallocFailedHook(void)
+{
+    taskDISABLE_INTERRUPTS();
+
     for (;;) {
     }
 }

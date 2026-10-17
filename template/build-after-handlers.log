@@ -1,0 +1,5 @@
+[1/2] Building C object CMakeFiles/template.dir/Core/Src/stm32f1xx_it.c.obj
+[2/2] Linking C executable template.elf
+Memory region         Used Size  Region Size  %age Used
+             RAM:        6008 B        20 KB     29.34%
+           FLASH:       11840 B        64 KB     18.07%

@@ -25,3 +25,5 @@ CMakeUserPresets.json
 
 # LibreOffice lock files
 .~lock.*#
+
+/template/build/

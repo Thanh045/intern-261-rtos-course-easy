@@ -14,26 +14,47 @@
 /* TODO: one helper that takes a port/pin and a work time, then three thin
  *       wrappers. Do not copy-paste the body three times. */
 
+static void run_task(GPIO_TypeDef *port,
+                     uint16_t pin,
+                     uint32_t work_us)
+{
+    for (;;) {
+        HAL_GPIO_WritePin(port, pin, GPIO_PIN_SET);
+        dwt_busy_wait_us(work_us);
+        HAL_GPIO_WritePin(port, pin, GPIO_PIN_RESET);
+        
+    }
+}
+
 void task_a(void *argument)
 {
     (void)argument;
-    for (;;) {
-        /* TODO */
-    }
+
+    run_task(
+        GPIOA,
+        (uint16_t)(1U << TASK_A_PIN),
+        TASK_A_WORK_US
+    );
 }
 
 void task_b(void *argument)
 {
     (void)argument;
-    for (;;) {
-        /* TODO */
-    }
+
+    run_task(
+        GPIOA,
+        (uint16_t)(1U << TASK_B_PIN),
+        TASK_B_WORK_US
+    );
 }
 
 void task_c(void *argument)
 {
     (void)argument;
-    for (;;) {
-        /* TODO */
-    }
+
+    run_task(
+        GPIOA,
+        (uint16_t)(1U << TASK_C_PIN),
+        TASK_C_WORK_US
+    );
 }
