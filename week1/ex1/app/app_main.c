@@ -15,22 +15,25 @@
 /* TODO 1: build the GPIO port/pin pair for PA<BLINK_GPIO_PIN>.
  *         Hint: GPIO_PIN_0 .. GPIO_PIN_15 are bit masks, not indices. */
 #define BLINK_PORT GPIOA
-#define BLINK_PIN  ((uint16_t)(1U << BLINK_GPIO_PIN))
+#define BLINK_PIN  ((uint16_t)(1U << BLINK_GPIO_PIN)) 
 
 /* TODO 2: implement the bring-up task.
  *         - toggle the pin
  *         - block for BLINK_PERIOD_MS using vTaskDelay()
  *         - the task must never return */
-
+volatile UBaseType_t bringup_stack_hwm = 0;
 static void bringup_task(void *argument)
 {
     (void)argument;
 
     for (;;) {
-        HAL_GPIO_TogglePin(BLINK_PORT, BLINK_PIN);
-        vTaskDelay(pdMS_TO_TICKS(BLINK_PERIOD_MS));
+        HAL_GPIO_WritePin(BLINK_PORT, BLINK_PIN,GPIO_PIN_SET);
+        vTaskDelay(pdMS_TO_TICKS(BLINK_PERIOD_MS / 2U));
         
-    }
+        HAL_GPIO_WritePin(BLINK_PORT, BLINK_PIN, GPIO_PIN_RESET);
+        vTaskDelay(pdMS_TO_TICKS(BLINK_PERIOD_MS - BLINK_PERIOD_MS / 2U));
+        bringup_stack_hwm = uxTaskGetStackHighWaterMark(NULL);
+    } 
 }
 
 void app_main(void)

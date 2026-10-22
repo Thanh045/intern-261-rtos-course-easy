@@ -7,7 +7,7 @@
 |---|---|---|---|---|---|
 | B2: preempt=1, ưu tiên khác nhau |0% |0% |100% | — | |
 | B3: preempt=0, ưu tiên khác nhau |0% |0% |100% | — | |
-| B4: preempt=1, cùng ưu tiên |33.3% |33.3% |33.3% | ms | |
+| B4: preempt=1, cùng ưu tiên |33.3% |33.3% |33.3% |1,000043 ms | |
 | B5: sau khi sửa starvation |16.63% |42.37% |24.35% | | |
 
 Cách tính CPU share từ ảnh PulseView (mô tả ngắn):Em ước tính CPU share từ tín hiệu GPIO. Khi các mức cao chồng nhau, em quy khoảng thời gian đó cho task có ưu tiên cao nhất. Phần cả ba chân thấp được ghi riêng. Phép đo chưa tách được thời gian ngắt và chi phí ngoài vùng GPIO đánh dấu.

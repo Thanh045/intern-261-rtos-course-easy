@@ -8,6 +8,7 @@
 void periodic_task(void *argument);
 void dwt_init(void);
 
+
 void app_main(void)
 {
     __HAL_RCC_GPIOA_CLK_ENABLE();

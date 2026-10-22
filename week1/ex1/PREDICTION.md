@@ -4,7 +4,7 @@
 > mọi chỗ dự đoán lệch so đo. Dự đoán sai không bị trừ điểm; dự đoán sau khi đo thì bị.
 
 `student_id`: 2550517   Ngày/giờ commit: 10:15 16/10/2026
-1. Chu kỳ LED tôi sẽ đo được: 166 ms (`BLINK_PERIOD_MS` = 166 ms)
+1. Chu kỳ LED tôi sẽ đo được: 83 ms (`BLINK_PERIOD_MS` = 83 ms)
 2. Sai số giữa chu kỳ đo được và `BLINK_PERIOD_MS`: 1000 us. Vì sao?
 Vì FreeRTOS dùng một đồng hồ chung là tiếng tick, nên sẽ có độ lệch phụ thuộc vào thời điểm gọi vTaskDelay so với tick
 3. Nếu để HAL timebase ở lại SysTick, điều gì sẽ xảy ra khi `vTaskDelay()` được gọi?

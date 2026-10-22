@@ -5,7 +5,7 @@
 
 /* Clock và lập lịch */
 #define configCPU_CLOCK_HZ                       SystemCoreClock
-#define configTICK_RATE_HZ                       100
+#define configTICK_RATE_HZ                       1000
 #define configUSE_PREEMPTION                     1
 #define configUSE_TIME_SLICING                   1
 #define configUSE_PORT_OPTIMISED_TASK_SELECTION  0

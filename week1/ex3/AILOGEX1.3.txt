@@ -1,0 +1,7 @@
+AILOGEX1.3
+
+WORK_JITTER_US = 200 nghĩa là gì? Có phải jitter đo được sẽ bằng 200 µs không?
+
+Vì sao giảm tick rate từ 1000 Hz xuống 100 Hz khiến khoảng chạy yêu cầu 13 ms thành khoảng 10 ms?
+
+Ngắt tick xảy ra ở đâu? Vì sao xử lý tick làm số vòng đếm của task giảm?

@@ -1,0 +1,13 @@
+FreeRTOS
+
+Ticktype_t: The data used to hold the tick count value, and to specify times, from the configUSE_16_BIT_TICKS: 1 : unsigned 16 bit. if 0: unsigned 32 bit
+Basetype_t: BaseType_t được định nghĩa tương ứng với kích thước từ (word size) tự nhiên và hiệu quả nhất của kiến trúc CPU đang sử dụng.
+
+Trên vi điều khiển 32-bit (như ARM Cortex-M, STM32): BaseType_t là kiểu số nguyên 32-bit (thường là long).
+
+Trên vi điều khiển 16-bit (như PIC24, MSP430): BaseType_t là kiểu số nguyên 16-bit (thường là short).
+
+Trên vi điều khiển 8-bit (như AVR, 8051): BaseType_t là kiểu số nguyên 8-bit (thường là char).
+Dạng không dấu tương ứng là UBaseType_t (thường dùng để đếm số lượng task, chỉ số ưu tiên priority, hoặc kích thước stack tính theo word).
+
+1. Cấu trúc tên hàm công khai (API Functions)Tên hàm được ghép theo công thức:$$\text{[Tiền tố kiểu trả về]} + \text{[Tên file định nghĩa]} + \text{[Hành động / Tên hàm]}$$

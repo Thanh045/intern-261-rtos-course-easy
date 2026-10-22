@@ -12,7 +12,7 @@
 
 /* 0 = vTaskDelay, 1 = xTaskDelayUntil */
 #ifndef DELAY_MODE
-#define DELAY_MODE 0
+#define DELAY_MODE 1
 #endif
 
 /* Fixed seed: the variable load must be reproducible across all four runs,

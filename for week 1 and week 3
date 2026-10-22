@@ -1,0 +1,25 @@
+ week1/ex1/AI LOGEX1.1.md                           |       34 [32m+[m
+ week1/ex1/PREDICTION.md                            |        2 [32m+[m[31m-[m
+ week1/ex1/REPORT.md                                |       15 [32m+[m[31m-[m
+ week1/ex1/app/app_main.c                           |       13 [32m+[m[31m-[m
+ "week1/ex1/\341\272\242nh/Ex1.jpg"                 |      Bin [31m0[m -> [32m96905[m bytes
+ ...ch huong dan bai tap lon mon PLVNDC_260901.pdf" |      Bin [31m0[m -> [32m265464[m bytes
+ week1/ex2/AI LOGEX1.2.md                           |       11 [32m+[m
+ week1/ex2/REPORT.md                                |        2 [32m+[m[31m-[m
+ week1/ex2/RTOS note/FreeRTOS.txt                   |       13 [32m+[m
+ "week1/ex2/\341\272\242nh/B2Ex1.2.jpg"             |      Bin [31m0[m -> [32m92522[m bytes
+ "week1/ex2/\341\272\242nh/B3Ex1.2.jpg"             |      Bin [31m0[m -> [32m97984[m bytes
+ "week1/ex2/\341\272\242nh/B4Ex1.4.jpg"             |      Bin [31m0[m -> [32m110318[m bytes
+ "week1/ex2/\341\272\242nh/B5Ex1.2.jpg"             |      Bin [31m0[m -> [32m99093[m bytes
+ week1/ex3/AILOGEX1.3.txt                           |        7 [32m+[m
+ week1/ex3/REPORT.md                                |       31 [32m+[m[31m-[m
+ week1/ex3/app/FreeRTOSConfig.h                     |        2 [32m+[m[31m-[m
+ week1/ex3/app/app_main.c                           |        1 [32m+[m
+ week1/ex3/app/periodic.c                           |        2 [32m+[m[31m-[m
+ week1/ex3/cfg1Ex1.3.csv                            | 10485761 [32m++++++++++++++++[m
+ week1/ex3/ex3_stats.py                             |      100 [32m+[m
+ "week1/ex3/\341\272\242nh/Ex3_cfg1.jpg"            |      Bin [31m0[m -> [32m107716[m bytes
+ "week1/ex3/\341\272\242nh/Ex3_cfg2.jpg"            |      Bin [31m0[m -> [32m111016[m bytes
+ "week1/ex3/\341\272\242nh/Ex3_cfg3.jpg"            |      Bin [31m0[m -> [32m106086[m bytes
+ "week1/ex3/\341\272\242nh/Ex3_cfg4.jpg"            |      Bin [31m0[m -> [32m105319[m bytes
+ 24 files changed, 10485964 insertions(+), 30 deletions(-)

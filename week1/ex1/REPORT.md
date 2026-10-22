@@ -6,11 +6,11 @@
 | Đại lượng | Giá trị |
 |---|---|
 | `BLINK_PERIOD_MS` (từ params.h) | |
-| Chu kỳ đo được — min |166.000ms |
-| Chu kỳ đo được — max | 166.050ms|
-| Chu kỳ đo được — trung bình | 166.017ms|
-| Sai số trung bình vs `BLINK_PERIOD_MS` |17us |
-| `uxTaskGetStackHighWaterMark()` của bringup_task | words |
+| Chu kỳ đo được — min |83,003ms |
+| Chu kỳ đo được — max | 83,004ms|
+| Chu kỳ đo được — trung bình | 83,003696ms|
+| Sai số trung bình vs `BLINK_PERIOD_MS` |+3,696us |
+| `uxTaskGetStackHighWaterMark()` của bringup_task |103  words |
 
 Ảnh PulseView (>= 10 chu kỳ, đọc được giá trị): `![](do_ex1.png)`
 
@@ -60,9 +60,8 @@ Tuy nhiên, logic analyzer đang lấy mẫu ở 20 kHz, tương ứng 50 µs gi
 100 Hz thì chu kỳ LED và sai số thay đổi thế nào? Trả lời bằng con số, không bằng lý thuyết.
 Khi hạ configTICK_RATE_HZ từ 1000 Hz xuống 100 Hz, kết quả đo chu kỳ đầy đủ của LED như sau:
 Đại lượng	|1000 Hz	|100 Hz
-Chu kỳ trung bình	|166,017 ms	|160,008 ms
-Sai lệch so với mục tiêu 166 ms	|+0,017 ms	|−5,992 ms
+Chu kỳ trung bình	|83,003696 ms	|80,003542 ms
+Sai lệch so với mục tiêu 166 ms	|+3,696 ms	|−2,996458 ms
 
 
-Như vậy, chu kỳ LED giảm khoảng 6,009 ms. Độ lớn sai số so với mục tiêu 166 ms tăng từ khoảng 17 µs lên 5992 µs, và LED nhấp nháy nhanh hơn.
 
