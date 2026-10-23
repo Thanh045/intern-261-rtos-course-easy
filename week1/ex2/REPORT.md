@@ -13,14 +13,18 @@
 Cách tính CPU share từ ảnh PulseView (mô tả ngắn):Em ước tính CPU share từ tín hiệu GPIO. Khi các mức cao chồng nhau, em quy khoảng thời gian đó cho task có ưu tiên cao nhất. Phần cả ba chân thấp được ghi riêng. Phép đo chưa tách được thời gian ngắt và chi phí ngoài vùng GPIO đánh dấu.
 
 ## 2. Preemption nhìn thấy ở đâu
-Trên ảnh bước 2, chỉ ra ít nhất **2 thời điểm** preemption xảy ra. Với mỗi thời điểm:
-dấu thời gian, task bị cắt, task chiếm CPU, và vì sao.
-Ở B2, task C có ưu tiên cao nhất và luôn Ready vì không block hay yield. C được chạy ngay khi scheduler khởi động; A và B không được chạy. Vì vậy, bản thu B2 không có hai thời điểm A/B đang chạy rồi bị C giành CPU. Em ghi nhận yêu cầu này chưa phù hợp với cấu hình B2, không tự điền các thời điểm không quan sát được.
+Trên ảnh **bước 4** (cùng ưu tiên, round-robin), chỉ ra ít nhất **2 thời điểm**
+preemption xảy ra. Với mỗi thời điểm: dấu thời gian, task bị cắt, task chiếm CPU,
+và vì sao (hết time slice, không phải block).
 
 | t (us) | Task bị preempt | Task chiếm CPU | Lý do |
-|---|---|---|---|
-| | | | |
+|1405,625|A|B|Hết time slice, scheduler chuyển sang task cùng ưu tiên|
+|2405,750 |B |C |Hết time slice, scheduler chuyển sang task cùng ưu tiên |
 
+Ở **bước 2** (ưu tiên khác nhau, đều busy-loop không block): giải thích vì sao ảnh
+của bạn cho thấy **0 thời điểm preemption**, dù chạy bao lâu đi nữa — dựa vào điều
+kiện preemption của FreeRTOS, không phải "vì ảnh chụp chưa đủ dài".
+Trong bản thu B4, các task có cùng ưu tiên và luôn sẵn sàng chạy. CPU lần lượt chuyển từ A sang B, rồi B sang C do hết time slice. Hai dấu hiệu chuyển task cách nhau khoảng 1000,125 µs, tương ứng time slice khoảng 1 ms. Các thời điểm trong bảng được ước tính từ lúc GPIO của task tiếp theo bắt đầu thay đổi, nên không phải thời điểm chuyển ngữ cảnh chính xác tuyệt đối.
 ## 3. Time slice
 Time slice đo được ở bước 4: 1.000043 ms. `configTICK_RATE_HZ` = 1000.
 Sai số: 0.0043% %. Giải thích sai số: Độ lệch có thể chịu ảnh hưởng của xử lý ngắt, chuyển ngữ cảnh, thời gian từ lúc task được chạy đến cạnh GPIO đầu tiên và độ phân giải lấy mẫu 0,125 µs
