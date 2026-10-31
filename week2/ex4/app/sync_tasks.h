@@ -7,8 +7,9 @@
  * producer_0 is the one swapped to task notification in step 4 — guard it
  * with PRODUCER0_USE_NOTIFY so the two configurations build from the same
  * source. */
-#ifndef PRODUCER0_USE_NOTIFY
+#ifndef PRODUCER0_USE_NOTIFY 
 #define PRODUCER0_USE_NOTIFY 0
+#define CHE_DO_DO_TOC_DO 0
 #endif
 
 void sync_init(void);

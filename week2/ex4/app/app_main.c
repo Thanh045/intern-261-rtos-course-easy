@@ -1,6 +1,5 @@
-/* Week 2 / Ex4 — event group & task notification.
- * Native FreeRTOS API only.
- */
+#include <stdint.h>
+
 #include "FreeRTOS.h"
 #include "task.h"
 
@@ -8,20 +7,62 @@
 #include "params.h"
 #include "sync_tasks.h"
 
-void app_main(void)
+static void dung_khi_loi(void)
 {
-    sync_init();
-
-    /* TODO 1: xTaskCreate sync_task first, store its handle into
-     *         sync_task_handle (cast to void*) — producer_0 needs it when
-     *         PRODUCER0_USE_NOTIFY is set. */
-
-    /* TODO 2: xTaskCreate EVENT_BIT_COUNT instances of producer_task, each
-     *         given its own index (0..EVENT_BIT_COUNT-1) as the task
-     *         parameter. */
-
-    vTaskStartScheduler();
+    taskDISABLE_INTERRUPTS();
 
     for (;;) {
     }
+}
+
+void app_main(void)
+{
+    CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+    DWT->CYCCNT = 0;
+    DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
+
+    sync_init();
+
+    TaskHandle_t task_dong_bo = NULL;
+
+    BaseType_t ket_qua = xTaskCreate(
+        sync_task,
+        "sync",
+        512,
+        NULL,
+        3,
+        &task_dong_bo
+    );
+
+    configASSERT(ket_qua == pdPASS);
+
+    if (ket_qua != pdPASS) {
+        dung_khi_loi();
+    }
+
+    sync_task_handle = (void *)task_dong_bo;
+
+    for (uint32_t ma_task = 0;
+         ma_task < EVENT_BIT_COUNT;
+         ma_task++) {
+
+        ket_qua = xTaskCreate(
+            producer_task,
+            "producer",
+            192,
+            (void *)(uintptr_t)ma_task,
+            1,
+            NULL
+        );
+
+        configASSERT(ket_qua == pdPASS);
+
+        if (ket_qua != pdPASS) {
+            dung_khi_loi();
+        }
+    }
+
+    vTaskStartScheduler();
+
+    dung_khi_loi();
 }

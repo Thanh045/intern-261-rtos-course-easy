@@ -1,0 +1,9 @@
+AI LOGEX2.3
+
+Vì sao Low đang làm việc 20 ms mà Mid vẫn chiếm CPU được?
+
+Vì sao dùng hệ số nhân để thử Mid chạy 40 ms thay vì sửa params.h?
+
+High ưu tiên cao nhất mà vẫn phải chờ Low: scheduler có làm sai không?
+
+Nếu Low giữ mutex mãi không trả, priority inheritance có cứu được High không?

@@ -37,7 +37,7 @@ add_executable(${CMAKE_PROJECT_NAME})
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
 # Đường dẫn tới mã ứng dụng bài 1
-set(APP_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../week1/ex3/app")
+set(APP_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../week2/ex1/app")
 
 
 # Cung cấp FreeRTOSConfig.h và cấu hình chip cho kernel
@@ -68,9 +68,11 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    "${APP_DIR}/app_main.c"
-    "${APP_DIR}/periodic.c"
-    "${APP_DIR}/dwt.c"
+         "${APP_DIR}/app_main.c"
+    "${APP_DIR}/sensor_task.c"
+    "${APP_DIR}/filter_task.c"
+    "${APP_DIR}/uart_task.c"
+    "${APP_DIR}/hooks.c"
 )
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE

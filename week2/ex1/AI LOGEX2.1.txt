@@ -1,0 +1,12 @@
+AI LOGEX2.1
+
+Vì sao cần hai queue, không dùng biến toàn cục?
+Queue lưu được nhiều mẫu, truyền bản sao dữ liệu và giúp các task chờ nhau an toàn. Biến toàn cục đơn lẻ dễ bị ghi đè trước khi đọc.
+
+
+Vì sao UART 9600 baud làm queue_filtered đầy trước?
+
+
+portMAX_DELAY có bảo đảm không mất dữ liệu cảm biến không?
+
+Tăng queue từ 12 lên 100 có giải quyết được UART chậm không?

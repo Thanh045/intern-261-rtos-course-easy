@@ -1,54 +1,81 @@
-/* Week 1 / Ex4 — FreeRTOS hooks.
- *
- * Both hooks must be observable from outside the chip. A breakpoint is not a
- * deliverable: you need a UART line or a distinct LED pattern you can photograph.
- */
 #include "FreeRTOS.h"
 #include "task.h"
 
 #include "main.h"
-#include "params.h"
 
-void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
+static StaticTask_t idle_tcb;
+static StackType_t idle_stack[configMINIMAL_STACK_SIZE];
+
+static StaticTask_t timer_tcb;
+static StackType_t timer_stack[configTIMER_TASK_STACK_DEPTH];
+
+volatile uint32_t fault_code = 0;
+
+static void fault_wait(void)
 {
-    /* TODO 1: report xTask / pcTaskName out of the chip, then stop.
-     *
-     * Careful: the stack of the offending task is already corrupt. Think about
-     * what you are allowed to call here, and write the reasoning in REPORT.md.
-     * Hint: this hook runs from the scheduler's context, not the task's.
-     */
-    (void)xTask;
-    (void)pcTaskName;
-    for (;;) {
+    for (volatile uint32_t i = 0; i < 800000U; i++) {
+        __NOP();
     }
+}
+
+static void fault_signal(uint32_t pulses)
+{
+    __disable_irq();
+
+    fault_code = pulses;
+
+    RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
+    (void)RCC->APB2ENR;
+
+    GPIOA->CRL =
+        (GPIOA->CRL & ~0xFU) | 0x2U;
+
+    for (;;) {
+        for (uint32_t i = 0; i < pulses; i++) {
+            GPIOA->BSRR = GPIO_PIN_0;
+            fault_wait();
+
+            GPIOA->BRR = GPIO_PIN_0;
+            fault_wait();
+        }
+
+        for (uint32_t i = 0; i < 6U; i++) {
+            fault_wait();
+        }
+    }
+}
+
+void vApplicationStackOverflowHook(
+    TaskHandle_t task,
+    char *task_name)
+{
+    (void)task;
+    (void)task_name;
+
+    fault_signal(2U);
 }
 
 void vApplicationMallocFailedHook(void)
 {
-    /* TODO 2: report, then stop. */
-    for (;;) {
-    }
+    fault_signal(3U);
 }
 
-/* configSUPPORT_STATIC_ALLOCATION = 1 makes these two callbacks mandatory.
- * Provide the memory for the idle task and the timer task here. */
-void vApplicationGetIdleTaskMemory(StaticTask_t **ppxIdleTaskTCBBuffer,
-                                   StackType_t **ppxIdleTaskStackBuffer,
-                                   uint32_t *pulIdleTaskStackSize)
+void vApplicationGetIdleTaskMemory(
+    StaticTask_t **tcb,
+    StackType_t **stack,
+    uint32_t *stack_size)
 {
-    /* TODO 3: static buffers. Note the size is in WORDS, not bytes —
-     *         getting this wrong is a silent overflow. */
-    (void)ppxIdleTaskTCBBuffer;
-    (void)ppxIdleTaskStackBuffer;
-    (void)pulIdleTaskStackSize;
+    *tcb = &idle_tcb;
+    *stack = idle_stack;
+    *stack_size = configMINIMAL_STACK_SIZE;
 }
 
-void vApplicationGetTimerTaskMemory(StaticTask_t **ppxTimerTaskTCBBuffer,
-                                    StackType_t **ppxTimerTaskStackBuffer,
-                                    uint32_t *pulTimerTaskStackSize)
+void vApplicationGetTimerTaskMemory(
+    StaticTask_t **tcb,
+    StackType_t **stack,
+    uint32_t *stack_size)
 {
-    /* TODO 4: same, for the software timer task. */
-    (void)ppxTimerTaskTCBBuffer;
-    (void)ppxTimerTaskStackBuffer;
-    (void)pulTimerTaskStackSize;
+    *tcb = &timer_tcb;
+    *stack = timer_stack;
+    *stack_size = configTIMER_TASK_STACK_DEPTH;
 }

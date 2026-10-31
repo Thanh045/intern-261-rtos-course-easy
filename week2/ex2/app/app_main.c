@@ -1,6 +1,5 @@
-/* Week 2 / Ex2 — race condition & mutex.
- * Native FreeRTOS API only.
- */
+#include <stdint.h>
+
 #include "FreeRTOS.h"
 #include "task.h"
 
@@ -10,16 +9,36 @@
 
 void writer_task(void *argument);
 
+static void creation_failed(void)
+{
+    taskDISABLE_INTERRUPTS();
+
+    for (;;) {
+    }
+}
+
 void app_main(void)
 {
     uart_guard_init();
 
-    /* TODO: xTaskCreate WRITER_COUNT instances of writer_task, each given its
-     *       own index (0..WRITER_COUNT-1) as the task parameter.
-     *       Do not create WRITER_COUNT separately-named functions. */
+    for (uint32_t i = 0; i < WRITER_COUNT; i++) {
+        BaseType_t result = xTaskCreate(
+            writer_task,
+            "writer",
+            384,
+            (void *)(uintptr_t)i,
+            tskIDLE_PRIORITY + 1,
+            NULL
+        );
+
+        configASSERT(result == pdPASS);
+
+        if (result != pdPASS) {
+            creation_failed();
+        }
+    }
 
     vTaskStartScheduler();
 
-    for (;;) {
-    }
+    creation_failed();
 }

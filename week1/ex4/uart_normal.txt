@@ -1,0 +1,1550 @@
+uart_normal
+
+▒▒▒▒a▒▒▒▒a▒▒▒i▒m▒▒a▒!▒▒▒B▒▒▒▒▒
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0
+
+--- RAM REPORT ---
+free_heap=7352 bytes
+minimum_ever_free_heap=7352 bytes
+target_free_heap=2048 bytes
+heap_target_met=1
+dyn_task: HWM=135 words, 540 bytes
+stat_task: HWM=136 words, 544 bytes
+ram_report_task: HWM=364 words, 1456 bytes
+idle_task: HWM=110 words, 440 bytes
+timer_task: HWM=84 words, 336 bytes
+uart_error_count=0

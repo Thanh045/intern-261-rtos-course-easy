@@ -1,31 +1,72 @@
-/* Week 2 / Ex1 — prints filtered samples to USART1 at UART_BAUD.
- * queue_filtered -> UART.
- *
- * This is also the task you deliberately starve in step 7 (temporarily set
- * UART_BAUD-equivalent hardware baud to 9600) to force queue_filtered to fill.
- */
+#include <stdint.h>
+#include <stdio.h>
+
 #include "FreeRTOS.h"
 #include "task.h"
 #include "queue.h"
-#include <stdio.h>
 
 #include "main.h"
 #include "params.h"
 #include "pipeline.h"
 
+extern UART_HandleTypeDef huart1;
+
+volatile uint32_t so_mau_uart_nhan = 0;
+volatile uint32_t so_mau_thieu_tai_uart = 0;
+volatile uint32_t so_lan_uart_loi = 0;
+
 void uart_task(void *argument)
 {
     (void)argument;
 
+    uint32_t so_thu_tu_mong_doi = 0;
+
     for (;;) {
-        filtered_sample_t in;
+        filtered_sample_t mau;
 
-        /* TODO 1: xQueueReceive(queue_filtered, &in, portMAX_DELAY). */
+        BaseType_t da_nhan = xQueueReceive(
+            queue_filtered,
+            &mau,
+            portMAX_DELAY
+        );
 
-        /* TODO 2: format "seq,ax,ay,az\r\n" and HAL_UART_Transmit on USART1.
-         *         Transmit time at UART_BAUD is the thing that makes this
-         *         task slow relative to sensor_task/filter_task — say so in
-         *         REPORT.md with the actual byte time you computed. */
-        (void)in;
+        if (da_nhan != pdPASS) {
+            continue;
+        }
+
+        so_mau_uart_nhan++;
+
+        so_mau_thieu_tai_uart +=
+            (uint32_t)(mau.seq - so_thu_tu_mong_doi);
+
+        so_thu_tu_mong_doi = mau.seq + 1U;
+
+        char dong_tin[64];
+
+        int do_dai = snprintf(
+            dong_tin,
+            sizeof(dong_tin),
+            "%lu,%d,%d,%d\r\n",
+            (unsigned long)mau.seq,
+            (int)mau.ax,
+            (int)mau.ay,
+            (int)mau.az
+        );
+
+        if (do_dai <= 0 || (size_t)do_dai >= sizeof(dong_tin)) {
+            so_lan_uart_loi++;
+            continue;
+        }
+
+        HAL_StatusTypeDef ket_qua = HAL_UART_Transmit(
+            &huart1, // con trỏ trỏ tới bộ điều khiển ngoại vi uart
+            (uint8_t *)dong_tin,
+            (uint16_t)do_dai,
+            1000U
+        );
+
+        if (ket_qua != HAL_OK) {
+            so_lan_uart_loi++;
+        }
     }
 }

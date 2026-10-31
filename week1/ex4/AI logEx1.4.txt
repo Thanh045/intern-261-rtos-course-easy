@@ -1,0 +1,11 @@
+AI logEx1.4
+
+Vì sao stack 640 bytes chứa mảng 512 bytes vẫn có thể tràn?
+ Biến cục bộ khác.
+Địa chỉ để quay lại sau khi gọi hàm.
+Thanh ghi được lưu khi gọi hàm và khi chuyển task.
+
+
+Khi tìm stack nhỏ nhất an toàn có giữ hog không?
+
+Vì sao hai task chạy cùng một hàm nhưng task tạo bằng xTaskCreate() làm giảm heap trống, còn task tạo bằng xTaskCreateStatic() vẫn chiếm RAM mà không làm giảm heap trống?

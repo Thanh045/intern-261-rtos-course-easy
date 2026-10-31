@@ -1,0 +1,11 @@
+AI LOGEX2.2
+
+tại sao tính độ trễ khi phải dùng logic analyxer, còn cho gate keeper thì lại dùng dwt
+
+
+taskYIELD() nhường CPU sau bao lâu? Vì sao thêm sau mỗi byte giúp tái hiện lỗi?
+
+
+Vì sao mutex chủ yếu làm task dùng UART chờ, còn critical section ảnh hưởng cả task khác?
+
+Vì sao đọc heap trước khi khởi tạo có thể làm phép trừ RAM ra số rất lớn?

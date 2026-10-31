@@ -143,9 +143,6 @@ void UsageFault_Handler(void)
   * @brief This function handles System service call via SWI instruction.
   */
 
-/**
-  * @brief This function handles Debug monitor.
-  */
 void DebugMon_Handler(void)
 {
   /* USER CODE BEGIN DebugMonitor_IRQn 0 */
@@ -159,12 +156,6 @@ void DebugMon_Handler(void)
 /**
   * @brief This function handles Pendable request for system service.
   */
-
-
-/**
-  * @brief This function handles System tick timer.
-  */
-
 
 /******************************************************************************/
 /* STM32F1xx Peripheral Interrupt Handlers                                    */

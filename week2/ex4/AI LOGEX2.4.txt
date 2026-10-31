@@ -1,0 +1,9 @@
+AI LOGEX2.4
+
+Vì sao một lần set bit event group có thể đánh thức nhiều task, còn một lần gửi notification chỉ tới một task?
+
+Khi nhiều task cùng chờ một bit và bật clear-on-exit, có task nào bị mất sự kiện vì task khác xóa bit trước không?
+
+Vì sao thay một điểm đồng bộ bằng notification nhưng RAM đo được vẫn là 40 bytes?
+
+Nếu sync_task có ưu tiên thấp hơn producer, thời gian đánh thức đo được sẽ thay đổi thế nào?
