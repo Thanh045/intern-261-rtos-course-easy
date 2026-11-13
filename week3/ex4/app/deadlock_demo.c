@@ -1,10 +1,6 @@
-/* Week 3 / Ex4 -- task_alpha and task_beta share two resources, protected by
- * two mutexes, mimicking a sensor register + a shared UART buffer that both
- * tasks occasionally need at once. This file is provided complete, not a
- * skeleton: build and run it exactly as given first and use
- * uxTaskGetSystemState() to find out why it stops making progress, before
- * you change anything in here. Native FreeRTOS API only.
- */
+
+#include <stdint.h>
+
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"
@@ -14,58 +10,108 @@
 #include "deadlock_demo.h"
 #include "supervisor.h"
 
-static SemaphoreHandle_t s_mutex_a;
-static SemaphoreHandle_t s_mutex_b;
+#ifndef EX4_GAY_DEADLOCK
+#define EX4_GAY_DEADLOCK 0
+#endif
+
+static SemaphoreHandle_t mutex_a;
+static SemaphoreHandle_t mutex_b;
+
+// Theo doi trong debugger:
+// 0: khong cho; 1: cho mutex A; 2: cho mutex B
+volatile uint32_t alpha_dang_cho = 0;
+volatile uint32_t beta_dang_cho = 0;
+
+volatile uint32_t so_vong_alpha = 0;
+volatile uint32_t so_vong_beta = 0;
 
 void deadlock_demo_init(void)
 {
-    s_mutex_a = xSemaphoreCreateMutex();
-    s_mutex_b = xSemaphoreCreateMutex();
-    configASSERT(s_mutex_a != NULL);
-    configASSERT(s_mutex_b != NULL);
+    mutex_a = xSemaphoreCreateMutex();
+    mutex_b = xSemaphoreCreateMutex();
+
+    configASSERT(mutex_a != NULL);
+    configASSERT(mutex_b != NULL);
+
+    vQueueAddToRegistry(mutex_a, "mutex_A"); // gán tên các địa chỉ thành Mutex tương ứng dễ debug
+    vQueueAddToRegistry(mutex_b, "mutex_B");
 }
 
-void task_alpha(void *argument)
+void task_alpha(void *tham_so)
 {
-    (void)argument;
+    (void)tham_so;
 
-    for (;;) {
-        xSemaphoreTake(s_mutex_a, portMAX_DELAY);
-        vTaskDelay(pdMS_TO_TICKS(5)); /* simulated register access time */
-        xSemaphoreTake(s_mutex_b, portMAX_DELAY);
+    for (;;)
+    {
+        // Alpha luon lay A truoc
+        alpha_dang_cho = 1;
+        xSemaphoreTake(mutex_a, portMAX_DELAY);
+        alpha_dang_cho = 0;
 
-        /* ... shared work using both resources ... */
+        vTaskDelay(pdMS_TO_TICKS(5));
 
-        xSemaphoreGive(s_mutex_b);
-        xSemaphoreGive(s_mutex_a);
+        alpha_dang_cho = 2;
+        xSemaphoreTake(mutex_b, portMAX_DELAY);
+        alpha_dang_cho = 0;
 
-        /* TODO (step 4 of README, after the deadlock is fixed): call
-         *       supervisor_checkin(SUPERVISOR_BIT_ALPHA) here, AFTER both
-         *       mutexes are released -- that is what makes the check-in mean
-         *       "this task completed a full cycle", not just "this task is
-         *       still being scheduled". */
+        // Da lay du hai mutex
+        so_vong_alpha++; // đếm số lần alpha lấy đủ 2 mutex
+
+        xSemaphoreGive(mutex_b);
+        xSemaphoreGive(mutex_a);
+
+        // Chi bao song sau khi hoan thanh cong viec
+        supervisor_checkin(SUPERVISOR_BIT_ALPHA);
 
         vTaskDelay(pdMS_TO_TICKS(20));
     }
 }
 
-void task_beta(void *argument)
+void task_beta(void *tham_so)
 {
-    (void)argument;
+    (void)tham_so;
 
-    for (;;) {
-        xSemaphoreTake(s_mutex_b, portMAX_DELAY);
-        vTaskDelay(pdMS_TO_TICKS(5)); /* simulated UART buffer access time */
-        xSemaphoreTake(s_mutex_a, portMAX_DELAY);
+    for (;;)
+    {
+#if EX4_GAY_DEADLOCK
 
-        /* ... shared work using both resources ... */
+        // Che do loi goc: Beta lay B roi A
+        beta_dang_cho = 2;
+        xSemaphoreTake(mutex_b, portMAX_DELAY);
+        beta_dang_cho = 0;
 
-        xSemaphoreGive(s_mutex_a);
-        xSemaphoreGive(s_mutex_b);
+        vTaskDelay(pdMS_TO_TICKS(5));
 
-        /* TODO (step 4 of README, after the deadlock is fixed): call
-         *       supervisor_checkin(SUPERVISOR_BIT_BETA) here, AFTER both
-         *       mutexes are released. */
+        beta_dang_cho = 1;
+        xSemaphoreTake(mutex_a, portMAX_DELAY);
+        beta_dang_cho = 0;
+
+        so_vong_beta++;
+
+        xSemaphoreGive(mutex_a);
+        xSemaphoreGive(mutex_b);
+
+#else
+
+        // Che do da sua: Beta cung lay A roi B
+        beta_dang_cho = 1;
+        xSemaphoreTake(mutex_a, portMAX_DELAY);
+        beta_dang_cho = 0;
+
+        vTaskDelay(pdMS_TO_TICKS(5));
+
+        beta_dang_cho = 2;
+        xSemaphoreTake(mutex_b, portMAX_DELAY);
+        beta_dang_cho = 0;
+
+        so_vong_beta++;
+
+        xSemaphoreGive(mutex_b);
+        xSemaphoreGive(mutex_a);
+
+#endif
+
+        supervisor_checkin(SUPERVISOR_BIT_BETA);
 
         vTaskDelay(pdMS_TO_TICKS(20));
     }
