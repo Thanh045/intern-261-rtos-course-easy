@@ -1,0 +1,5 @@
+AI LOGEX3.2 
+
+Vì sao dùng timer one-shot cho debounce, còn long-press dùng auto-reload?
+Mỗi cạnh nảy gọi xTimerResetFromISR() thì thời điểm hết hạn debounce thay đổi thế nào?
+Callback software timer chạy trong ISR hay task? Có phải mỗi timer có một task riêng không?

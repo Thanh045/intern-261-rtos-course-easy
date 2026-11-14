@@ -10,9 +10,9 @@
 #include "deadlock_demo.h"
 #include "supervisor.h"
 
-#ifndef EX4_GAY_DEADLOCK
+
 #define EX4_GAY_DEADLOCK 0
-#endif
+
 
 static SemaphoreHandle_t mutex_a;
 static SemaphoreHandle_t mutex_b;

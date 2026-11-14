@@ -1,6 +1,3 @@
-/* Week 3 / Ex3 -- UART RX interrupt -> stream buffer.
- * Native FreeRTOS API only.
- */
 #include "FreeRTOS.h"
 #include "task.h"
 #include "stream_buffer.h"
@@ -9,33 +6,79 @@
 #include "params.h"
 #include "uart_rx.h"
 
+extern UART_HandleTypeDef huart1;
+
 StreamBufferHandle_t rx_stream;
 
 static uint8_t s_rx_byte;
 
+/* Xem các biến này trong debugger để kiểm tra mất byte. */
+volatile uint32_t so_byte_nhan = 0;
+volatile uint32_t so_byte_mat = 0;
+volatile uint32_t so_loi_nhan = 0;
+
 void uart_rx_init(void)
 {
-    /* TODO 1: rx_stream = xStreamBufferCreate(STREAM_BUFFER_BYTES,
-     *         TRIGGER_LEVEL). Check non-NULL.
-     *
-     * TODO 2: HAL_UART_Receive_IT(&huart1, &s_rx_byte, 1) to arm the first
-     *         byte. huart1 must already be MX_USART1_UART_Init()'d at
-     *         RX_BAUD -- that part lives in template/, not here. */
+    rx_stream = xStreamBufferCreate(
+        STREAM_BUFFER_BYTES,
+        TRIGGER_LEVEL
+    );
+
+    if (rx_stream == NULL) {
+        taskDISABLE_INTERRUPTS();
+        for (;;) {
+        }
+    }
+
+    /*
+     * huart1 phải được khởi tạo trước ở RX_BAUD.
+     * Đặt mức ưu tiên ngắt được phép gọi API FromISR.
+     */
+    HAL_NVIC_DisableIRQ(USART1_IRQn);
+
+    HAL_NVIC_SetPriority(
+        USART1_IRQn,
+        configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY,
+        0U
+    );
+
+    if (HAL_UART_Receive_IT(&huart1, &s_rx_byte, 1) != HAL_OK) {
+        taskDISABLE_INTERRUPTS();
+        for (;;) {
+        }
+    }
+
+    /*
+     * parser_task sẽ bật ngắt sau khi scheduler chạy.
+     * Tránh gọi API FromISR trước khi hệ thống sẵn sàng.
+     */
 }
 
 void uart_rx_isr_handler(void)
 {
     BaseType_t xHigherPriorityTaskWoken = pdFALSE;
 
-    /* TODO 3: xStreamBufferSendFromISR(rx_stream, &s_rx_byte, 1,
-     *         &xHigherPriorityTaskWoken). Check the return value: what do you
-     *         do with the byte if the stream buffer is full and it returns 0?
-     *         Answer this in PREDICTION.md, not just here. */
+    so_byte_nhan++;
 
-    /* TODO 4: HAL_UART_Receive_IT(&huart1, &s_rx_byte, 1) again -- re-arm for
-     *         the next byte. Forgetting this is the single most common way
-     *         to silently stop receiving after the first byte. */
+    if (xStreamBufferSendFromISR(
+            rx_stream,
+            &s_rx_byte,
+            1,
+            &xHigherPriorityTaskWoken) != 1) {
+        /* Buffer đầy: bỏ byte mới và ghi nhận số byte mất. */
+        so_byte_mat++;
+    }
 
-    /* TODO 5: portYIELD_FROM_ISR(xHigherPriorityTaskWoken). */
-    (void)xHigherPriorityTaskWoken;
+    if (HAL_UART_Receive_IT(&huart1, &s_rx_byte, 1) != HAL_OK) {
+        so_loi_nhan++;
+    }
+
+    portYIELD_FROM_ISR(xHigherPriorityTaskWoken);
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if (huart->Instance == USART1) {
+        uart_rx_isr_handler();
+    }
 }

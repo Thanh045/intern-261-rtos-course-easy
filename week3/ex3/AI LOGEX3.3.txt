@@ -1,0 +1,7 @@
+AI LOGEX3.3
+
+1. Tại sao trong HAL_UART_RxCpltCallback() phải sử dụng xStreamBufferSendFromISR() thay vì xStreamBufferSend()? Điều gì xảy ra nếu gọi sai API trong ngắt UART?
+
+2. Tại sao parser_task được đặt ưu tiên cao nhất nhưng vẫn có thể xảy ra mất byte khi gửi UART liên tục? Việc sử dụng HAL_UART_Transmit() đồng bộ ảnh hưởng như thế nào đến khả năng xử lý của task?
+
+3. Khi tăng STREAM_BUFFER_BYTES từ 64 lên 128 bytes, tại sao số ACK hợp lệ chỉ tăng từ 214 lên 220 khi gửi 500 lệnh không nghỉ? Điều này cho thấy giới hạn nào của hệ thống và có thể cải thiện bằng cách nào?

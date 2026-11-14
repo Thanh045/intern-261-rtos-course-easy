@@ -1,6 +1,3 @@
-/* Week 3 / Ex3 -- UART RX -> stream buffer -> parser.
- * Native FreeRTOS API only.
- */
 #include "FreeRTOS.h"
 #include "task.h"
 
@@ -11,12 +8,46 @@
 
 void app_main(void)
 {
+    GPIO_InitTypeDef cau_hinh_gpio = {0};
+
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+
+    cau_hinh_gpio.Pin = GPIO_PIN_0;
+    cau_hinh_gpio.Mode = GPIO_MODE_OUTPUT_PP;
+    cau_hinh_gpio.Pull = GPIO_NOPULL;
+    cau_hinh_gpio.Speed = GPIO_SPEED_FREQ_LOW;
+
+    HAL_GPIO_Init(GPIOA, &cau_hinh_gpio);
+
+    configASSERT(configMAX_PRIORITIES >= 3);
+
     uart_rx_init();
 
-    /* TODO: xTaskCreate parser_task and demo_task. parser_task must run at a
-     *       priority high enough that it drains rx_stream faster than bytes
-     *       arrive at RX_BAUD -- justify the number in REPORT.md with the
-     *       byte time you computed. */
+    if (xTaskCreate(
+            demo_task,
+            "demo",
+            256,
+            NULL,
+            1,
+            NULL) != pdPASS) {
+        taskDISABLE_INTERRUPTS();
+        for (;;) {
+        }
+    }
+
+    if (xTaskCreate(
+            parser_task,
+            "parser",
+            256,
+            NULL,
+            configMAX_PRIORITIES - 1,
+            NULL) != pdPASS) {
+        taskDISABLE_INTERRUPTS();
+        for (;;) {
+        }
+    }
 
     vTaskStartScheduler();
 

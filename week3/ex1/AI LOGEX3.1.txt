@@ -1,0 +1,9 @@
+AI LOGEX3.1
+
+Một số câu hỏi vấn đáp hay cho Ex3.1 — ISR → task:
+1. Vì sao priority 4 gây assert, còn priority 6 hợp lệ? Số priority nhỏ hơn nghĩa là gì?
+2. Vì sao ISR phải dùng vTaskNotifyGiveFromISR(), không dùng xTaskNotifyGive()?
+vì hàm này được thiết kế cho ngữ cảnh ngắt, không block và báo có cần chuyển task hay không. xTaskNotifyGive() dùng trong task, không được gọi từ ISR.
+3. pxHigherPriorityTaskWoken so sánh ưu tiên của những task nào? Có phải so task với ngắt không?
+4. portYIELD_FROM_ISR() có chạy ACK task ngay bên trong ISR không? PendSV đóng vai trò gì?
+Khi cần chuyển task, nó đặt yêu cầu PendSV. Sau khi ISR và các ngắt ưu tiên cao hơn hoàn tất, PendSV lưu ngữ cảnh task cũ, khôi phục ngữ cảnh task được chọn; ACK task lúc đó mới chạy.

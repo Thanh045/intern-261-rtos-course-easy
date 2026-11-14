@@ -1,0 +1,6 @@
+AI LOGEX3.4
+1. Deadlock là gì? Vì sao task_alpha và task_beta bị deadlock khi lấy mutex theo thứ tự A → B và B → A?
+
+2. Tại sao sau khi thống nhất thứ tự lấy mutex A → B thì hết deadlock? Có phải chương trình không bao giờ bị deadlock nữa không?
+
+3. Task ở trạng thái Blocked có chắc chắn bị deadlock không? Phân biệt Blocked do vTaskDelay() và do chờ mutex.

@@ -13,7 +13,6 @@ Khung truyền chuẩn 8N1 gồm : 1 start bit + 8 data bits + 0 parity + 1 stop
 2. `STREAM_BUFFER_BYTES` của bạn chứa tối đa bao nhiêu lệnh dài `MAX_CMD_LEN`
    byte trước khi đầy?
 Bộ đệm có dung lượng STREAM_BUFFER_BYTES = 64 bytes, và độ dài tối đa của một lệnh là MAX_CMD_LEN = 16 bytes.
-
 Số lệnh có kích thước tối đa mà buffer có thể lưu trữ trước khi đầy là: 64/16 = 4
 
 3.Nếu `xStreamBufferSendFromISR` trả về 0 (stream buffer đầy) trong

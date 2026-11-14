@@ -45,7 +45,7 @@ I2C_HandleTypeDef hi2c1;
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-
+volatile uint32_t reset_do_iwdg = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -54,7 +54,7 @@ static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
-
+void app_main(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -79,7 +79,10 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
+reset_do_iwdg =
+    (__HAL_RCC_GET_FLAG(RCC_FLAG_IWDGRST) != RESET);
 
+__HAL_RCC_CLEAR_RESET_FLAGS();
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -95,6 +98,14 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
  extern void app_main(void);
+ const char thong_bao[] = "BOOT\r\n";
+
+HAL_UART_Transmit(
+    &huart1,
+    (uint8_t *)thong_bao,
+    sizeof(thong_bao) - 1,
+    100
+);
   app_main();
   /* USER CODE END 2 */
 

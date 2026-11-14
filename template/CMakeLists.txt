@@ -45,6 +45,7 @@ add_subdirectory(
 )
 
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
+"${CMAKE_CURRENT_SOURCE_DIR}/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c"
     "${APP_DIR}/app_main.c"
     "${APP_DIR}/deadlock_demo.c"
     "${APP_DIR}/runtime_stats.c"
@@ -59,10 +60,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Cau hinh thuc nghiem
 # 1 = deadlock goc, 0 = da sua
 # Watchdog: 1 = bat, 0 = tat
-target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
-    EX4_GAY_DEADLOCK=1
-    EX4_BAT_WATCHDOG=0
-)
+
 
 list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
 

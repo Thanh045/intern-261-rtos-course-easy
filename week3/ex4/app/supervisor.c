@@ -1,23 +1,22 @@
-
 #include <stdint.h>
 
 #include "FreeRTOS.h"
 #include "task.h"
 #include "event_groups.h"
-
+#include "stm32f1xx_hal_iwdg.h"
 #include "main.h"
 #include "params.h"
 #include "supervisor.h"
 
-#ifndef EX4_BAT_WATCHDOG
+
 #define EX4_BAT_WATCHDOG 0
-#endif
+
 
 #define BIT_PHU_1 (1u << 2)
 #define BIT_PHU_2 (1u << 3)
 
 #define TAT_CA_BIT ((1u << SUPERVISOR_BITS) - 1u) // có 4 bit, 16 -1 = 15 = 0x0F
-
+ extern UART_HandleTypeDef huart1;
 EventGroupHandle_t supervisor_events = NULL;
 
 #if EX4_BAT_WATCHDOG
@@ -72,7 +71,7 @@ void task_phu_1(void *tham_so)
     for (;;)
     {
         supervisor_checkin(BIT_PHU_1);
-        vTaskDelay(pdMS_TO_TICKS(50));
+        vTaskDelay(pdMS_TO_TICKS(400));
     }
 }
 
@@ -116,11 +115,26 @@ void supervisor_task(void *tham_so)
 #endif
         }
         else
+       
         {
             so_lan_thieu_heartbeat++;
 
             bit_thieu = TAT_CA_BIT & ~bit_nhan;
+static uint8_t da_bao_loi = 0;
 
+if (da_bao_loi == 0)
+{
+    da_bao_loi = 1;
+
+    const char thong_bao[] = "DEADLOCK\r\n";
+
+    HAL_UART_Transmit(
+        &huart1,
+        (uint8_t *)thong_bao,
+        sizeof(thong_bao) - 1,
+        100
+    );
+}
             // Khong refresh IWDG khi thieu heartbeat.
             // Neu watchdog bat, phan cung se reset.
             // Neu watchdog tat, van tiep tuc thong ke.

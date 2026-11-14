@@ -1,6 +1,3 @@
-/* Week 3 / Ex1 -- ISR -> task wakeup, NVIC priority.
- * Native FreeRTOS API only.
- */
 #include "FreeRTOS.h"
 #include "task.h"
 
@@ -12,12 +9,27 @@ void app_main(void)
 {
     exti_button_init();
 
-    /* TODO: xTaskCreate ack_task. Keep its priority high enough that it is
-     *       the thing that actually determines your measured latency, not
-     *       scheduling jitter from something else. Justify the number in
-     *       REPORT.md. */
+    BaseType_t ket_qua = xTaskCreate(
+        ack_task,
+        "ack",
+        256U,
+        NULL,
+        3U,
+        NULL
+    );
+
+    configASSERT(ket_qua == pdPASS);
+
+    if (ket_qua != pdPASS) {
+        __disable_irq();
+
+        for (;;) {
+        }
+    }
 
     vTaskStartScheduler();
+
+    __disable_irq();
 
     for (;;) {
     }
